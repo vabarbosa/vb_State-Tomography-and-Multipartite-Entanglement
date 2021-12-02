@@ -27,6 +27,6 @@ f.close()
 
 
 problist = np.array([x[p]/N for p in x]) #this is a list of probabillites of measuring a certain state
-states = [bin(int(hexs, 16))[2:].zfill(nbits) for hexs in keys] #extracting states from hex form given in the results
+states = [bin(int(hexs, 16))[2:].zfill(nbits) for hexs in keys] #extracting states from hex form given in the results, why they are stored in hex is a mystery
 plt.bar(states, problist, color='g')   #bar chart of the results
 plt.show()
